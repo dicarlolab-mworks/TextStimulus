@@ -6,13 +6,15 @@
 //  Copyright © 2016 The MWorks Project. All rights reserved.
 //
 
+#include "TextStimulus.hpp"
+
 
 BEGIN_NAMESPACE_MW
 
 
 class TextStimulusPlugin : public Plugin {
     void registerComponents(boost::shared_ptr<ComponentRegistry> registry) override {
-        //registry->registerFactory<StandardComponentFactory, TextStimulus>();
+        registry->registerFactory<StandardStimulusFactory, TextStimulus>();
     }
 };
 

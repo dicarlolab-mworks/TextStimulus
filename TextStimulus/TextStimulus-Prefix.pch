@@ -9,11 +9,16 @@
 #ifndef TextStimulus_Prefix_pch
 #define TextStimulus_Prefix_pch
 
+#include <CoreGraphics/CoreGraphics.h>
+#include <CoreText/CoreText.h>
+
 #ifdef __cplusplus
 
+#include <MWorksCore/CFObjectPtr.h>
+#include <MWorksCore/OpenGLContextManager.h>
 #include <MWorksCore/Plugin.h>
-#include <MWorksCore/StandardComponentFactory.h>
-#include <MWorksCore/Stimulus.h>
+#include <MWorksCore/StandardStimuli.h>
+#include <MWorksCore/StandardStimulusFactory.h>
 
 #endif /* defined(__cplusplus) */
 
