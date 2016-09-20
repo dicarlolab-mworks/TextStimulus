@@ -225,6 +225,11 @@ void TextStimulus::bindTexture(int currentContextIndex) {
     // Draw the frame in the context
     CGContextSetTextMatrix(context.get(), CGAffineTransformIdentity);
     CTFrameDraw(frame.get(), context.get());
+    if (CTFrameGetVisibleStringRange(frame.get()).length != fullRange.length) {
+        mwarning(M_DISPLAY_MESSAGE_DOMAIN,
+                 "Text for stimulus \"%s\" does not fit within the specified region and will be truncated",
+                 getTag().c_str());
+    }
     
     //
     // Create an OpenGL texture from the bitmap context
