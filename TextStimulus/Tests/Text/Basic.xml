@@ -8,7 +8,7 @@
         <variable tag="red" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="1" type="any"></variable>
         <variable tag="green" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="1" type="any"></variable>
         <variable tag="blue" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="1" type="any"></variable>
-        <variable tag="x_size" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="12" type="any"></variable>
+        <variable tag="x_size" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="15" type="any"></variable>
         <variable tag="y_size" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="4" type="any"></variable>
         <variable tag="x_pos" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="-5" type="any"></variable>
         <variable tag="y_pos" scope="global" logging="when_changed" exclude_from_data_file="NO" default_value="-5" type="any"></variable>
@@ -28,7 +28,7 @@
             <action tag="Live queue text" type="live_queue_stimulus" stimulus="text"></action>
             <action tag="Update display" type="update_stimulus_display" predicted_output_time=""></action>
             <action type="wait" tag="Wait" duration="1.0" duration_units="s"></action>
-            <action type="assignment" tag="Change text" variable="text" value="&quot;Greetings, world!  How are you today?&quot;"></action>
+            <action type="assignment" tag="Change text" variable="text" value="&quot;Greetings, world! How are you today?&quot;"></action>
             <action tag="Update display" type="update_stimulus_display" predicted_output_time=""></action>
             <action type="wait" tag="Wait" duration="1.0" duration_units="s"></action>
             <action type="assignment" tag="Change font_name" variable="font_name" value="&quot;Helvetica&quot;"></action>
